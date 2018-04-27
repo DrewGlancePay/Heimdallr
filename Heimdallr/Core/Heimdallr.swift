@@ -16,7 +16,7 @@ public let HeimdallrErrorNotAuthorized = 2
     private let credentials: OAuthClientCredentials?
 
     private let accessTokenStore: OAuthAccessTokenStore
-    private var accessToken: OAuthAccessToken? {
+    public var accessToken: OAuthAccessToken? {
         get {
             return accessTokenStore.retrieveAccessToken()
         }
